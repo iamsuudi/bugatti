@@ -1,6 +1,6 @@
 export default function Nav() {
-    return (
-		<div className="navbar glass">
+	return (
+		<div className="navbar glass py-5">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div
@@ -40,7 +40,7 @@ export default function Nav() {
 				</div>
 			</div>
 			<div className="navbar-center">
-				<a className="btn btn-ghost text-xl">Bugatti</a>
+				<a className="btn btn-ghost text-3xl flex gap-0"><span className="text-5xl">B</span><span>ugatti</span></a>
 			</div>
 			<div className="navbar-end">
 				<button className="btn btn-ghost btn-circle">

@@ -1,6 +1,6 @@
 export default function Detail() {
 	return (
-		<div className="py-20 flex flex-col gap-32 justify-center items-center">
+		<div className="py-32 flex flex-col gap-32 justify-center items-center">
 			<div className="w-fit flex flex-col items-center">
 				<h3 className="text-3xl font-black w-fit text-center">
 					How It <span className="text-primary">Works</span>
