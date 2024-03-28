@@ -1,6 +1,6 @@
 export default function Nav() {
 	return (
-		<div className="navbar glass py-5">
+		<div className="navbar glass mx-[1.5vw] my-[3vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div
@@ -25,7 +25,7 @@ export default function Nav() {
 					</div>
 					<ul
 						tabIndex={0}
-						className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow glass rounded-box w-52"
+						className="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow glass w-52"
 					>
 						<li>
 							<a>Homepage</a>
