@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Nav({ theme, setTheme }) {
 	const toggleDarkMode = (e) => {
 		if (e.target.checked) {
@@ -128,4 +130,9 @@ export default function Nav({ theme, setTheme }) {
 			</div>
 		</div>
 	);
+}
+
+Nav.propTypes = {
+	theme: PropTypes.string,
+	setTheme: PropTypes.func,
 }
