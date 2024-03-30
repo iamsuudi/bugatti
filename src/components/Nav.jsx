@@ -16,9 +16,9 @@ export default function Nav({ theme, setTheme }) {
 	};
 
 	return (
-		<div className="navbar glass mx-[1.5vw] my-[3vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
-			<div className="navbar-start">
-				<div className="dropdown">
+		<div className="navbar glass mx-[1.5vw] my-[1.5vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
+			<div className="navbar-start gap-10">
+				<div className="dropdown dropdown-hover">
 					<div
 						tabIndex={0}
 						role="button"
@@ -54,6 +54,7 @@ export default function Nav({ theme, setTheme }) {
 						</li>
 					</ul>
 				</div>
+				<button className="btn btn-primary">Contact Us</button>
 			</div>
 			<div className="navbar-center">
 				<a className="btn btn-ghost text-3xl flex gap-0">
