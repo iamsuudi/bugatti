@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-		<div className="flex justify-center py-32 bg-base-200">
+		<div className="flex justify-center items-center py-24 bg-base-200 gap-20 flex-col">
 			<footer className="footer p-10 w-[90%] max-w-screen-xl bg-base-200 text-base-content">
 				<nav className="gap-3">
 					<h6 className="footer-title">Services</h6>
@@ -43,6 +43,15 @@ export default function Footer() {
 					</fieldset>
 				</form>
 			</footer>
+			<p className="text-sm">
+				Copyright © 2024 -{" "}
+				<a
+					className="link link-hover"
+					href="https://www.linkedin.com/in/iamsuudi"
+				>
+					Abdulfetah Suudi ↗︎
+				</a>
+			</p>
 		</div>
 	);
 }
