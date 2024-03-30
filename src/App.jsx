@@ -4,6 +4,7 @@ import Detail from "./components/Detail";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
+import Stat from "./components/Stat";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -23,6 +24,7 @@ function App() {
       <Hero />
       <Detail />
       <Features />
+      <Stat />
       <Footer />
 		</>
 	);
