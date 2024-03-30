@@ -34,7 +34,7 @@ export default function Footer() {
 							<input
 								type="text"
 								placeholder="username@site.com"
-								className="input input-bordered join-item w-72"
+								className="input input-bordered join-item max-w-72"
 							/>
 							<button className="btn btn-primary join-item">
 								Subscribe
@@ -52,6 +52,9 @@ export default function Footer() {
 					Abdulfetah Suudi ↗︎
 				</a>
 			</p>
+			<button className="btn btn-primary fixed bottom-4 right-4 lg:hidden">
+				Contact Us
+			</button>
 		</div>
 	);
 }

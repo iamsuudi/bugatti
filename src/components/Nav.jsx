@@ -54,7 +54,7 @@ export default function Nav({ theme, setTheme }) {
 						</li>
 					</ul>
 				</div>
-				<button className="btn btn-primary">Contact Us</button>
+				<button className="btn btn-primary hidden lg:block">Contact Us</button>
 			</div>
 			<div className="navbar-center">
 				<a className="btn btn-ghost text-3xl flex gap-0">
