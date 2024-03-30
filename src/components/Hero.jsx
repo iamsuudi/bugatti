@@ -4,8 +4,7 @@ export default function Hero() {
 			<div
 				className="hero min-h-screen"
 				style={{
-					backgroundImage:
-						"url(./bugatti.jpg)",
+					backgroundImage: "url(./bugatti.jpg)",
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
@@ -13,11 +12,12 @@ export default function Hero() {
 					<div className="max-w-md">
 						<h1 className="mb-5 text-5xl font-bold">Hello there</h1>
 						<p className="mb-5">
-							Provident cupiditate voluptatem et in. Quaerat
-							fugiat ut assumenda excepturi exercitationem quasi.
-							In deleniti eaque aut repudiandae et a id nisi.
+							From the iconic exteriors that exude timeless elegance to
+							the sumptuous interiors adorned with the finest
+							materials, each Bugatti is a testament to
+							uncompromising craftsmanship and opulence.
 						</p>
-						<button className="btn btn-primary">Get Started</button>
+						<button className="btn btn-primary">Explore Features</button>
 					</div>
 				</div>
 			</div>
