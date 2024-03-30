@@ -4,9 +4,9 @@ const months = ["Jan", "Feb", "March", "April", "May", "Jun", "Jul", "Aug", "Sep
 
 export default function Stat() {
 	return (
-		<div className="stats flex flex-wrap items-center justify-center py-32 bg-base-300 text-base-content">
+		<div className="stats stats-vertical lg:stats-horizontal shadow w-full justify-center gap-10 py-32 bg-base-300 text-base-content">
 			<Section>
-				<div className="stat max-w-64">
+				<div className="stat w-56">
 					<div
 						className="stat-figure tooltip tooltip-primary text-primary"
 						data-tip="Total bugatties sold in the last month"
@@ -35,7 +35,7 @@ export default function Stat() {
 			</Section>
 
 			<Section>
-				<div className="stat max-w-64">
+				<div className="stat w-56">
 					<div
 						className="stat-figure tooltip tooltip-primary text-primary"
 						data-tip="New Customers visit in the last month"
@@ -61,7 +61,7 @@ export default function Stat() {
 			</Section>
 
 			<Section>
-				<div className="stat max-w-64">
+				<div className="stat w-56">
 					<div
 						className="stat-figure tooltip tooltip-primary text-primary"
 						data-tip="New Customers registered in the last month"
