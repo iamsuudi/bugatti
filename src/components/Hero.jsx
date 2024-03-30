@@ -1,6 +1,8 @@
+import Section from "./Animate";
+
 export default function Hero() {
     return (
-		<>
+		<Section>
 			<div
 				className="hero min-h-screen"
 				style={{
@@ -21,6 +23,6 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
-		</>
+		</Section>
 	);
 }
