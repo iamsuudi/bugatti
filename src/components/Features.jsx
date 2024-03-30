@@ -2,7 +2,7 @@ import Section from "./Animate";
 
 export default function Features() {
 	return (
-		<div className="flex flex-col items-center justify-center gap-20 py-32">
+		<div className="flex flex-col items-center justify-center gap-32 py-32">
 			<Section>
 				<div className="card w-[90%] max-w-[35rem] bg-base-100 shadow-xl">
 					<div className="card-body gap-7">
@@ -18,7 +18,7 @@ export default function Features() {
 							Bugatti family today
 						</p>
 						<div className="card-actions justify-start">
-							<button className="btn btn-primary">Buy Now</button>
+							<button className="btn btn-primary">Explore Features</button>
 						</div>
 					</div>
 				</div>
