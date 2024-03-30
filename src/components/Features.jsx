@@ -18,13 +18,15 @@ export default function Features() {
 							Bugatti family today
 						</p>
 						<div className="card-actions justify-start">
-							<button className="btn btn-primary">Explore Features</button>
+							<button className="btn btn-primary">
+								Explore Features
+							</button>
 						</div>
 					</div>
 				</div>
 			</Section>
-			<Section>
-				<div className=" w-[90%] max-w-screen-xl mx-auto">
+			<Section className={"w-[90%] max-w-screen-xl mx-auto"}>
+				<div>
 					<div className="carousel w-full rounded-box">
 						<div id="item1" className="carousel-item w-full">
 							<div className="card w-full bg-base-300 shadow-xl">
