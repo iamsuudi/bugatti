@@ -17,12 +17,15 @@ export default function Nav({ theme, setTheme }) {
 
 	return (
 		<div className="navbar glass mx-[1.5vw] my-[1.5vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
-			<div className="navbar-start gap-10">
-				<div className="dropdown dropdown-hover">
+			<div className="navbar-start">
+				<button className="btn btn-primary hidden lg:block">
+					Contact Us
+				</button>
+				<div className="dropdown flex">
 					<div
 						tabIndex={0}
 						role="button"
-						className="btn btn-ghost btn-circle"
+						className="btn btn-ghost lg:hidden hover:bg-primary-content"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -35,13 +38,13 @@ export default function Nav({ theme, setTheme }) {
 								strokeLinecap="round"
 								strokeLinejoin="round"
 								strokeWidth="2"
-								d="M4 6h16M4 12h16M4 18h7"
+								d="M4 6h16M4 12h8m-8 6h16"
 							/>
 						</svg>
 					</div>
 					<ul
 						tabIndex={0}
-						className="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow glass w-52"
+						className="menu menu-sm dropdown-content mt-16 z-[1] p-2 shadow glass rounded-box w-52"
 					>
 						<li>
 							<a>Homepage</a>
@@ -53,14 +56,24 @@ export default function Nav({ theme, setTheme }) {
 							<a>About</a>
 						</li>
 					</ul>
+					<a className="btn btn-ghost text-3xl flex gap-0">
+						<span className="text-5xl">B</span>
+						<span>ugatti</span>
+					</a>
 				</div>
-				<button className="btn btn-primary hidden lg:block">Contact Us</button>
 			</div>
-			<div className="navbar-center">
-				<a className="btn btn-ghost text-3xl flex gap-0">
-					<span className="text-5xl">B</span>
-					<span>ugatti</span>
-				</a>
+			<div className="navbar-center hidden lg:flex">
+				<ul className="menu menu-horizontal px-1">
+					<li>
+						<a>Homepage</a>
+					</li>
+					<li>
+						<a>Portfolio</a>
+					</li>
+					<li>
+						<a>About</a>
+					</li>
+				</ul>
 			</div>
 			<div className="navbar-end">
 				<button className="btn btn-ghost btn-circle">
@@ -136,4 +149,4 @@ export default function Nav({ theme, setTheme }) {
 Nav.propTypes = {
 	theme: PropTypes.string,
 	setTheme: PropTypes.func,
-}
+};
