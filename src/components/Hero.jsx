@@ -1,6 +1,6 @@
 import Section from "./Animate";
 
-export default function Hero() {
+export default function Hero({title, body}) {
     return (
 		<Section>
 			<div
@@ -12,14 +12,14 @@ export default function Hero() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+						<h1 className="mb-5 text-5xl font-bold">{title || "Hello there"}</h1>
 						<p className="mb-5">
-							From the iconic exteriors that exude timeless elegance to
+							{body || `From the iconic exteriors that exude timeless elegance to
 							the sumptuous interiors adorned with the finest
 							materials, each Bugatti is a testament to
-							uncompromising craftsmanship and opulence.
+							uncompromising craftsmanship and opulence.`}
 						</p>
-						<button className="btn btn-primary">Explore Features</button>
+						{!title && <button className="btn btn-primary">Explore Features</button>}
 					</div>
 				</div>
 			</div>
