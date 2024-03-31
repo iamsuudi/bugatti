@@ -22,6 +22,6 @@ export default function Section({ children, className }) {
 }
 
 Section.propTypes = {
-	children: PropTypes.func,
+	children: PropTypes.element,
 	className: PropTypes.string,
 }

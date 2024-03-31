@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./routes/App";
 import Home from "./routes/Home";
+import About from "./components/About";
 
 export default function Router() {
     const router = createBrowserRouter([
@@ -11,6 +12,10 @@ export default function Router() {
                 {
                     index: true,
                     element: <Home />,
+                },
+                {
+                    path: '/features',
+                    element: <About />,
                 }
             ]
         }

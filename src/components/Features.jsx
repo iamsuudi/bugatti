@@ -42,7 +42,7 @@ export default function Features() {
 								</div>
 								<figure>
 									<img
-										src="./bugatti1.jpg"
+										src="./bugatti5.jpg"
 										className="w-full"
 									/>
 								</figure>
@@ -61,7 +61,7 @@ export default function Features() {
 								</div>
 								<figure>
 									<img
-										src="./bugatti2.jpg"
+										src="./bugatti6.jpg"
 										className="w-full"
 									/>
 								</figure>
@@ -80,7 +80,7 @@ export default function Features() {
 								</div>
 								<figure>
 									<img
-										src="./bugatti3.jpg"
+										src="./bugatti7.jpg"
 										className="w-full"
 									/>
 								</figure>
@@ -99,7 +99,7 @@ export default function Features() {
 								</div>
 								<figure>
 									<img
-										src="./bugatti4.jpg"
+										src="./bugatti8.jpg"
 										className="w-full"
 									/>
 								</figure>
