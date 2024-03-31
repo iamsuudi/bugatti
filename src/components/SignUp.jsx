@@ -1,6 +1,8 @@
+import MotionButton from "./MotionButton";
+
 export default function SignUp() {
 	return (
-		<div className="hero min-h-screen">
+		<div className="hero">
 			<div className="hero-content flex-col gap-10 lg:flex-row-reverse">
 				<div className="text-center lg:text-left">
 					<h1 className="text-5xl font-bold">Sign Up</h1>
@@ -36,7 +38,11 @@ export default function SignUp() {
 							/>
 						</div>
 						<div className="form-control mt-6">
-							<button className="btn btn-primary">Sign UP</button>
+							<MotionButton>
+								<button className="btn btn-primary">
+									Sign UP
+								</button>
+							</MotionButton>
 						</div>
 					</form>
 				</div>

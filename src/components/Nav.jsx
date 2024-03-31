@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import MotionButton from "./MotionButton";
+import { Link } from "react-router-dom";
 
 export default function Nav({ theme, setTheme }) {
 	const toggleDarkMode = (e) => {
@@ -18,9 +20,11 @@ export default function Nav({ theme, setTheme }) {
 	return (
 		<div className="navbar glass mx-[1.5vw] my-[1.5vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
 			<div className="navbar-start">
-				<button className="btn btn-primary hidden lg:block">
-					Contact Us
-				</button>
+				<MotionButton>
+					<button className="btn btn-primary hidden lg:block">
+						Contact Us
+					</button>
+				</MotionButton>
 				<div className="dropdown flex">
 					<div
 						tabIndex={0}
@@ -57,8 +61,10 @@ export default function Nav({ theme, setTheme }) {
 						</li>
 					</ul>
 					<a className="btn btn-ghost text-3xl flex gap-0">
-						<span className="text-5xl">B</span>
-						<span>ugatti</span>
+						<Link to={"/"}>
+							<span className="text-5xl">B</span>
+							<span>ugatti</span>
+						</Link>
 					</a>
 				</div>
 			</div>

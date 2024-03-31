@@ -1,8 +1,9 @@
 import features from "../features";
-import Section from "./Animate";
+import Section from "../components/Animate";
 import PropTypes from "prop-types";
-import Hero from "./Hero";
-import SignUp from "./SignUp";
+import Hero from "../components/Hero";
+import SignUp from "../components/SignUp";
+import MotionButton from "../components/MotionButton";
 
 const Card = ({ feature, index }) => {
 	return (
@@ -19,20 +20,22 @@ const Card = ({ feature, index }) => {
 };
 
 const Buy = () => {
-    return (
-		<div className="py-32 flex justify-center">
+	return (
+		<div className="flex justify-center">
 			<div className="card w-[90%] max-w-screen-xl bg-primary text-primary-content">
 				<div className="card-body">
 					<h2 className="card-title">Bugatti is the future!</h2>
 					<p>The most admired AutoMobile in the world</p>
 					<div className="card-actions justify-end">
-						<button className="btn">Buy Now</button>
+						<MotionButton>
+							<button className="btn">Buy Now</button>
+						</MotionButton>
 					</div>
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default function About() {
 	// console.log(features);
@@ -51,12 +54,12 @@ export default function About() {
 					))}
 				</div>
 			</div>
-			<div className="py-32 bg-base-300">
-				<Section>
-					<Buy />
-				</Section>
+			<div className="py-32 bg-base-300 flex flex-col gap-20">
 				<Section>
 					<SignUp />
+				</Section>
+				<Section>
+					<Buy />
 				</Section>
 			</div>
 		</>
