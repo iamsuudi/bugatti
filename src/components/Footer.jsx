@@ -1,3 +1,5 @@
+import MotionButton from "./MotionButton";
+
 export default function Footer() {
     return (
 		<div className="flex justify-center items-center py-24 bg-base-200 gap-20 flex-col">
@@ -36,9 +38,11 @@ export default function Footer() {
 								placeholder="username@site.com"
 								className="input input-bordered join-item max-w-72"
 							/>
-							<button className="btn btn-primary join-item">
-								Subscribe
-							</button>
+							<MotionButton>
+								<button className="btn btn-primary join-item">
+									Subscribe
+								</button>
+							</MotionButton>
 						</div>
 					</fieldset>
 				</form>
@@ -52,9 +56,11 @@ export default function Footer() {
 					Abdulfetah Suudi ↗︎
 				</a>
 			</p>
-			<button className="btn btn-primary fixed bottom-4 right-4 lg:hidden">
-				Contact Us
-			</button>
+			<MotionButton>
+				<button className="btn btn-primary fixed bottom-4 right-4 lg:hidden">
+					Contact Us
+				</button>
+			</MotionButton>
 		</div>
 	);
 }

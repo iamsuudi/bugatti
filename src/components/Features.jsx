@@ -1,4 +1,6 @@
 import Section from "./Animate";
+import { Link } from "react-router-dom";
+import MotionButton from "./MotionButton";
 
 export default function Features() {
 	return (
@@ -18,9 +20,11 @@ export default function Features() {
 							Bugatti family today
 						</p>
 						<div className="card-actions justify-start">
-							<button className="btn btn-primary">
-								Explore Features
-							</button>
+							<MotionButton>
+								<button className="btn btn-primary">
+									<Link to="/features">Explore Features</Link>
+								</button>
+							</MotionButton>
 						</div>
 					</div>
 				</div>
