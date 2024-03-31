@@ -17,6 +17,22 @@ const Card = ({ feature, index }) => {
 	);
 };
 
+const Buy = () => {
+    return (
+		<div className="py-32 flex justify-center">
+			<div className="card w-[90%] max-w-screen-xl bg-primary text-primary-content">
+				<div className="card-body">
+					<h2 className="card-title">Bugatti is the future!</h2>
+					<p>The most admired AutoMobile in the world</p>
+					<div className="card-actions justify-end">
+						<button className="btn">Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
 export default function About() {
 	// console.log(features);
 	return (
@@ -33,6 +49,7 @@ export default function About() {
 						</Section>
 					))}
 				</div>
+				<Buy />
 			</div>
 		</>
 	);
