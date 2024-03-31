@@ -1,4 +1,5 @@
 import Section from "./Animate";
+import PropTypes from "prop-types";
 
 export default function Hero({title, body}) {
     return (
@@ -25,4 +26,9 @@ export default function Hero({title, body}) {
 			</div>
 		</Section>
 	);
+}
+
+Hero.propTypes = {
+	title: PropTypes.string,
+	body: PropTypes.string,
 }

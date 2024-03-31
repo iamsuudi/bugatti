@@ -10,9 +10,9 @@ export default function Section({ children, className }) {
 		<section ref={ref} className={className}>
 			<div
 				style={{
-					transform: isInView ? "none" : "translateY(200px)",
+					transform: isInView ? "none" : "translateY(50px)",
 					opacity: isInView ? 1 : 0,
-					transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+					transition: "all 0.75s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
 			>
 				{children}
