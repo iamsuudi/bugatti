@@ -2,6 +2,7 @@ import features from "../features";
 import Section from "./Animate";
 import PropTypes from "prop-types";
 import Hero from "./Hero";
+import SignUp from "./SignUp";
 
 const Card = ({ feature, index }) => {
 	return (
@@ -49,7 +50,14 @@ export default function About() {
 						</Section>
 					))}
 				</div>
-				<Buy />
+			</div>
+			<div className="py-32 bg-base-300">
+				<Section>
+					<Buy />
+				</Section>
+				<Section>
+					<SignUp />
+				</Section>
 			</div>
 		</>
 	);
