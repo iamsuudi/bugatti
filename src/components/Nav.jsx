@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import MotionButton from "./MotionButton";
 import { Link } from "react-router-dom";
 
-export default function Nav({ theme, setTheme }) {
+export default function Nav({ theme, setTheme, location }) {
 	const toggleDarkMode = (e) => {
 		if (e.target.checked) {
 			console.log("now light so changing to dark");
@@ -20,13 +20,13 @@ export default function Nav({ theme, setTheme }) {
 	return (
 		<div className="navbar glass mx-[1.5vw] my-[1.5vw] py-3 px-[3vw] fixed w-[97vw] z-20 rounded-full">
 			<div className="navbar-start">
-				<MotionButton>
-					<button className="btn btn-primary hidden lg:block">
-						<Link to={"/contact"}>
-							Contact US
-						</Link>
-					</button>
-				</MotionButton>
+				{location.pathname !== "/contact" && (
+					<MotionButton>
+						<button className="btn btn-primary hidden lg:block">
+							<Link to={"/contact"}>Contact US</Link>
+						</button>
+					</MotionButton>
+				)}
 				<div className="dropdown flex">
 					<div
 						tabIndex={0}
@@ -53,19 +53,13 @@ export default function Nav({ theme, setTheme }) {
 						className="menu menu-sm dropdown-content mt-16 z-[1] p-5 gap-2 shadow glass rounded-box w-52"
 					>
 						<li>
-							<Link to={"/"}>
-								Homepage
-							</Link>
+							<Link to={"/"}>Homepage</Link>
 						</li>
 						<li>
-							<Link to={"/features"}>
-								Features
-							</Link>
+							<Link to={"/features"}>Features</Link>
 						</li>
 						<li>
-							<Link to={"/contact"}>
-								Contact Us
-							</Link>
+							<Link to={"/contact"}>Contact Us</Link>
 						</li>
 					</ul>
 					<div className="btn btn-ghost text-3xl flex gap-0">
@@ -79,19 +73,13 @@ export default function Nav({ theme, setTheme }) {
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
 					<li>
-						<Link to={"/"}>
-							Homepage
-						</Link>
+						<Link to={"/"}>Homepage</Link>
 					</li>
 					<li>
-						<Link to={"/features"}>
-							Features
-						</Link>
+						<Link to={"/features"}>Features</Link>
 					</li>
 					<li>
-						<Link to={"/contact"}>
-							Contact Us
-						</Link>
+						<Link to={"/contact"}>Contact Us</Link>
 					</li>
 				</ul>
 			</div>
@@ -169,4 +157,5 @@ export default function Nav({ theme, setTheme }) {
 Nav.propTypes = {
 	theme: PropTypes.string,
 	setTheme: PropTypes.func,
+	location: PropTypes.object,
 };

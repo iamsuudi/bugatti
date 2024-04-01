@@ -1,6 +1,7 @@
 import MotionButton from "./MotionButton";
+import PropTypes from 'prop-types';
 
-export default function Footer() {
+export default function Footer({location}) {
     return (
 		<div className="flex justify-center items-center py-24 bg-base-200 gap-20 flex-col">
 			<footer className="footer p-10 w-[90%] max-w-screen-xl bg-base-200 text-base-content">
@@ -56,11 +57,15 @@ export default function Footer() {
 					Abdulfetah Suudi ↗︎
 				</a>
 			</p>
-			<MotionButton>
+			{location.pathname !== '/contact' && <MotionButton>
 				<button className="btn btn-primary fixed bottom-4 right-4 lg:hidden">
 					Contact Us
 				</button>
-			</MotionButton>
+			</MotionButton>}
 		</div>
 	);
+}
+
+Footer.propTypes = {
+	location: PropTypes.object,
 }
