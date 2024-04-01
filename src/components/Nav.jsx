@@ -22,14 +22,16 @@ export default function Nav({ theme, setTheme }) {
 			<div className="navbar-start">
 				<MotionButton>
 					<button className="btn btn-primary hidden lg:block">
-						Contact Us
+						<Link to={"/contact"}>
+							Contact US
+						</Link>
 					</button>
 				</MotionButton>
 				<div className="dropdown flex">
 					<div
 						tabIndex={0}
 						role="button"
-						className="btn btn-ghost lg:hidden hover:bg-primary-content"
+						className="btn btn-ghost lg:hidden"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -48,36 +50,48 @@ export default function Nav({ theme, setTheme }) {
 					</div>
 					<ul
 						tabIndex={0}
-						className="menu menu-sm dropdown-content mt-16 z-[1] p-2 shadow glass rounded-box w-52"
+						className="menu menu-sm dropdown-content mt-16 z-[1] p-5 gap-2 shadow glass rounded-box w-52"
 					>
 						<li>
-							<a>Homepage</a>
+							<Link to={"/"}>
+								Homepage
+							</Link>
 						</li>
 						<li>
-							<a>Portfolio</a>
+							<Link to={"/features"}>
+								Features
+							</Link>
 						</li>
 						<li>
-							<a>About</a>
+							<Link to={"/contact"}>
+								Contact Us
+							</Link>
 						</li>
 					</ul>
-					<a className="btn btn-ghost text-3xl flex gap-0">
+					<div className="btn btn-ghost text-3xl flex gap-0">
 						<Link to={"/"}>
 							<span className="text-5xl">B</span>
 							<span>ugatti</span>
 						</Link>
-					</a>
+					</div>
 				</div>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
 					<li>
-						<a>Homepage</a>
+						<Link to={"/"}>
+							Homepage
+						</Link>
 					</li>
 					<li>
-						<a>Portfolio</a>
+						<Link to={"/features"}>
+							Features
+						</Link>
 					</li>
 					<li>
-						<a>About</a>
+						<Link to={"/contact"}>
+							Contact Us
+						</Link>
 					</li>
 				</ul>
 			</div>
