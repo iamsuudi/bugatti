@@ -52,6 +52,7 @@ export default function Footer({location}) {
 				Copyright © 2024 -{" "}
 				<a
 					className="link link-hover"
+					target="_blank"
 					href="https://www.linkedin.com/in/iamsuudi"
 				>
 					Abdulfetah Suudi ↗︎

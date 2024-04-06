@@ -2,8 +2,6 @@
 
 <div align="center">
 
-  <!-- <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80"> -->
-
   <h2 align="center">Marketing Website And Landing Page For Bugatti</h2>
   <p align="center">
     <br />
